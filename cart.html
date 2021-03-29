@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en"> 
+<head> 
+<title>Grocery Delivery Service - Target</title> 
+<meta charset="utf-8"> 
+<link href= "boostedbrand.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> 
+<body> 
+
+<header>
+	<a href="home.html"><img src="GroceryLogo.png" height="150" width="500"></a>
+        
+	
+</header>
+    <input type="text" placeholder="Search..">
+    <a href="cart.html"><img src="cart.png" height="20" width="20"></a>
+<hr>
+
+<nav> 
+<b> 
+	<a href="Home.html">Home</a> 
+	<div class="dropdown">
+	<button class="drop"><b>Stores</b></button>
+	<div class="dropdown-content">
+		<a href="meijer.html">Meijer</a>
+		<a href="walmart.html">Walmart</a>
+		<a href="target.html">Target</a>
+                <a href="kroger.html">Kroger</a>
+	</div>
+	</div>
+	<a href="aos.html">Areas of Service</a> 
+	<a href="about.html">About Us</a> 
+	<a href="contact.html">Contact Us</a>
+        
+</b>
+</nav>
+<form id="shopping-cart" action="cart.html" method="post">
+    <table class="shopping-cart">
+        <thead>
+            <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <p id="sub-total">
+        <strong>Sub Total</strong>: <span id="stotal"></span>
+    </p>
+    <ul id="shopping-cart-actions">
+        <li>
+            <input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
+        </li>
+        <li>
+            <input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
+        </li>
+        <li>
+            <button onclick="goBack()">Continue Shopping</button>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+        </li>
+        <li>
+            <a href="checkout.html" class="btn">Go To Checkout</a>
+        </li>
+    </ul>
+</form>
+
+<button onclick="goBack()">Previous Page</button>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+<br>
+<hr>
+<footer> 
+<img src="GroceryLogo.png" width="200" height="50"><br>
+<small><i>© 2021 Grocery Delivery Service <br>
+Indianapolis, IN 46217<br>
+
+Phone: (219) 286-9418<br>
+
+grocerydelivery@gmail.com</i></small> 
+</footer>
+</body> 
+</html>
