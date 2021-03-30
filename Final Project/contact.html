@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<title>Grocery Delivery Service- Contact Us</title> 
+<meta charset="utf-8"> 
+<link href= "grocery.css" rel="stylesheet">
+</head> 
+<body> 
+<header>
+	<a href="home.html"><img src="GroceryLogo.png" height="150" width="500"></a>
+</header>
+    <input type="text" placeholder="Search..">
+    <a href="cart.html"><img src="cart.png" height="20" width="20"></a>
+<hr>
+<nav> 
+<b> 
+<a href="Home.html">Home</a> 
+	<div class="dropdown">
+	<button class="drop"><b>Stores</b></button>
+	<div class="dropdown-content">
+		<a href="meijer.html">Meijer</a>
+		<a href="walmart.html">Walmart</a>
+		<a href="target.html">Target</a>
+                <a href="kroger.html">Kroger</a>
+	</div>
+	</div>
+	<a href="aos.html">Areas of Service</a> 
+	<a href="about.html">About Us</a> 
+	<a href="contact.html">Contact Us</a>
+</b>
+</nav>
+<hr>
+<h1>Contact Us Today!</h1>
+<form method="post" action="https://webdevbasics.net/scripts/php">
+<label for="myFName">First Name: <input type="text" name="myFName" id="myFName" required="required"></label><br><br>
+<label for="myLName">Last Name: <input type="text" name="myLName" id="myLName" required="required"></label><br><br>
+<label for="myEmail">Email Address: <input type="email" name="myEmail" id="myEmail" maxlength="35" required="required"></label><br><br>
+<label for="myPhone">Phone Number: <input type="tel" name="myPhone" id="myPhone" maxlength="12" required="required"></label><br><br>
+<label for="myComments">Comments:</label>
+<textarea name="myComments" id="myComments" cols="30" rows="1">Enter comments</textarea><br>
+<br><button onclick="showAlert()">Submit</button>
+<script>
+  function showAlert() {
+    alert ("Thank you for your submission!");
+  }
+  </script>
+</form>
+<br>
+<hr>
+<footer> 
+<img src="GroceryLogo.png" width="200" height="50"><br>
+<small><i>© 2021 Grocery Delivery Service<br>
+Indianapolis, IN 46217<br>
+
+Phone: (219) 286-9418<br>
+
+grocerydelivery@gmail.com</i></small> 
+</footer>
+</body> 
+</html>
